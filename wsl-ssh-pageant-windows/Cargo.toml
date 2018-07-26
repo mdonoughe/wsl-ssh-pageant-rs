@@ -1,0 +1,9 @@
+[package]
+name = "wsl-ssh-pageant-windows"
+version = "0.1.0"
+authors = ["Matthew Donoughe <mdonoughe@gmail.com>"]
+
+[dependencies]
+byteorder = "1.2"
+rand = "0.5.4"
+winapi = { version = "0.3.5", features = ["handleapi", "memoryapi", "winuser"] }
