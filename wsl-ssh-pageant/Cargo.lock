@@ -324,6 +324,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94258f53601af11e6a49f722422f6e3425c52b06245a5cf9bc09908b174f5e27"
 
 [[package]]
+name = "signal-hook-registry"
+version = "1.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0"
+dependencies = [
+ "libc",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -429,9 +438,9 @@ dependencies = [
 
 [[package]]
 name = "tokio-process"
-version = "0.2.2"
+version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0832648d1ff7ca42c06ca45dc76797b92c56500de828e33c77276fa1449947b6"
+checksum = "88e1281e412013f1ff5787def044a9577a0bed059f451e835f1643201f8b777d"
 dependencies = [
  "futures",
  "libc",
@@ -459,14 +468,15 @@ dependencies = [
 
 [[package]]
 name = "tokio-signal"
-version = "0.2.1"
+version = "0.2.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "342d088c63623f63eada591e065778038c63b516939530db2aa09a8df9118507"
+checksum = "d0c34c6e548f101053321cba3da7cbb87a610b85555884c41b07da2eb91aff12"
 dependencies = [
  "futures",
  "libc",
  "mio",
  "mio-uds",
+ "signal-hook-registry",
  "tokio-executor",
  "tokio-io",
  "tokio-reactor",
