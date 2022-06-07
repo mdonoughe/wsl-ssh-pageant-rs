@@ -1,6 +1,10 @@
 version: 2
 updates:
   - package-ecosystem: cargo
-    directory: /
+    directory: /wsl-ssh-pageant/
+    schedule:
+      interval: daily
+  - package-ecosystem: cargo
+    directory: /wsl-ssh-pageant-windows/
     schedule:
       interval: daily
