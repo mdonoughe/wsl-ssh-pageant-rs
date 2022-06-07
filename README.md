@@ -1,3 +1,5 @@
+Archived. I've been using [benpye/wsl-ssh-pageant].
+
 # wsl-ssh-pageant-rs
 
 Similar to [benpye/wsl-ssh-pageant] and [NZSmartie/wsl-ssh-pageant], this allows Linux programs running under WSL to access [PuTTY]'s Pageant SSH authentication agent, or some other compatible agent such as [GPG4Win]'s `gpg-agent` (when configured with `enable-putty-support`).
